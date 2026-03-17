@@ -12,4 +12,4 @@ python main.py
 ## Dataset
 Resume Dataset:
 Download from: https://www.kaggle.com/datasets/saugataroyarghya/resume-dataset?resource=download
-Place in /data
+Place downloaded dataset and job_description.txt in /data.
