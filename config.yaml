@@ -1,0 +1,38 @@
+project:
+  name: resume_matcher
+  version: 1.0
+  description: Simple AI system to match resumes to job descriptions using open-source datasets
+
+data:
+  resume_dataset_path: data/resume_data.csv
+  job_description_path: data/job_description.txt
+  text_column_resume: resume_text
+  text_column_job: description
+
+preprocessing:
+  lowercase: true
+  remove_punctuation: true
+  remove_stopwords: true
+  lemmatization: false
+
+embedding:
+  method: tfidf   # options: tfidf, sentence_transformer
+  model_name: all-MiniLM-L6-v2
+
+matching:
+  similarity_metric: cosine
+  top_k: 10
+
+output:
+  show_scores: true
+  show_resume_ids: true
+  highlight_keywords: false
+
+evaluation:
+  enabled: false
+  metric: precision_at_k
+  k: 5
+
+system:
+  seed: 42
+  device: cpu
