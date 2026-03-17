@@ -1,0 +1,13 @@
+We are hiring an ML Engineer to build an AI-powered resume matching system.
+
+Responsibilities:
+- Build text preprocessing and feature pipelines for resumes and job descriptions
+- Implement embeddings using sentence transformers or TF-IDF
+- Compute cosine similarity and rank candidates
+- Deploy and monitor ML services (Docker/Kubernetes preferred)
+
+Requirements:
+- Strong Python, pandas, NumPy
+- Experience with NLP, semantic search, and information retrieval
+- Familiarity with scikit-learn and transformer-based embeddings
+- Experience with evaluation metrics and experiment tracking is a plus
